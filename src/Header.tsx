@@ -23,7 +23,7 @@ export default function Header({ Change }: Props) {
         Change(nationality);
     };
     return (
-        <div className="bg-bg-2 mr-20 m-20 p-10  shadow-md rounded-lg flex items-center justify-end gap-10 ">
+        <div className="bg-bg-2 mr-20 m-14 p-10  shadow-md rounded-lg flex items-center justify-end gap-10 ">
             <div>
                 <InputLabel id="demo-simple-select-label" style={{ color: "white" }}>Nationality</InputLabel>
                 <Select

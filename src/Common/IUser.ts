@@ -1,5 +1,5 @@
 
-export interface IUserN {
+export interface IUser {
     name: {
         first: string;
         last: string;
@@ -19,4 +19,8 @@ export interface IUserN {
     },
     nat: string;
     gender: string;
+}
+
+export interface ChacheUsers {
+    [key:number] : IUser[]
 }

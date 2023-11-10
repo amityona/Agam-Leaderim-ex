@@ -1,9 +1,9 @@
 import React from 'react'
-import { IUserN } from './Common/IUser'
+import { IUser } from './Common/IUser'
 
 interface IUserDataProps {
-    data: IUserN[];
-    ChooseUser: (argu: IUserN) => void;
+    data: IUser[];
+    ChooseUser: (argu: IUser) => void;
 }
 
 const UsersData = ({ data, ChooseUser }: IUserDataProps) => {
@@ -23,7 +23,7 @@ const UsersData = ({ data, ChooseUser }: IUserDataProps) => {
                 </thead>
                 <tbody className='space-y-5'>
 
-                    {data?.map((user: IUserN) => {
+                    {data?.map((user: IUser) => {
                         return <tr key={user?.phone} className='hover:bg-gray' onClick={() => { ChooseUser(user) }} >
                             <td className='flex justify-center mt-3 items-start'> <img alt={user?.name?.first} className='flex justify-center text-center rounded-full w-10 h-10' src={`${user?.picture?.medium}`} /></td>
                             <td>{`${user?.name?.first} ${user?.name?.last} `}  </td>
